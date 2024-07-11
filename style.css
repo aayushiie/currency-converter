@@ -1,12 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: var(--background);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 :root{
-    --background: #FEFAE0;
+    --cream: #FEFAE0;
     --text: #283618;
     --button: #DDA15E;
     --textSecondary: #606C38;    
@@ -17,7 +16,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    background-color: var(--button);
+}
+
+.currency-container{
+    background-color: var(--cream);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 h1{
@@ -38,10 +44,9 @@ input{
     width: 6rem;
     height: 1rem;
     text-wrap: wrap;
-    border: 2px solid var(--button);
+    border: 2px solid var(--textSecondary);
     border-radius: 1rem;
     padding: 0.5rem;
-    background-color: var(--button);
     color: var(--text);
 }
 
@@ -68,9 +73,9 @@ p{
 }
 
 select{
-    border: 2px solid var(--button);
+    border: 2px solid var(--textSecondary);
     border-radius: 1rem;
-    background-color: var(--button);
+    /* background-color: var(--button); */
     color: var(--textSecondary);
 }
 
@@ -95,18 +100,18 @@ select{
 }
 
 .btn{
-    border: 1rem solid var(--button);
+    border: 1rem solid var(--textSecondary);
     border-radius: 1rem;
-    background-color: var(--button);
-    color: var(--textSecondary);
+    background-color: var(--textSecondary);
+    color: var(--cream);
     cursor: pointer;
 }
 
 button:hover{
-    color: var(--background);
-    text-decoration: underline var(--background) 2px;
-    background-color: var(--textSecondary);
-    border: 1rem solid var(--textSecondary);
+    color: var(--text);
+    text-decoration: underline var(--text) 2px;
+    background-color: var(--button);
+    border: 1rem solid var(--button);
     border-radius: 1rem;
     transition: .2s ease-in-out;
 }
