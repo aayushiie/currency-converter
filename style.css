@@ -73,10 +73,11 @@ p{
 }
 
 select{
-    border: 2px solid var(--textSecondary);
-    border-radius: 1rem;
-    /* background-color: var(--button); */
+    /* border: 2px solid var(--textSecondary);
+    border-radius: 1rem; */
+    background-color: var(--cream);
     color: var(--textSecondary);
+    border: none;
 }
 
 .currency{
@@ -84,6 +85,9 @@ select{
     justify-content: center;
     align-items: center;
     column-gap: 0.25rem;
+    border: 1px solid var(--textSecondary);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .end-message{
